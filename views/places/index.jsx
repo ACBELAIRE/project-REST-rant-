@@ -3,6 +3,7 @@ const Def = require('../default')
 
 // GET places
 //pass in mock data
+//each child in a list should have a uniqie "key" prop <-- come back and do this
 let places = [{
     name: 'H-Thai-ML',
     city: 'Seattle',
