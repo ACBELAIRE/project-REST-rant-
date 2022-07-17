@@ -1,3 +1,4 @@
+const { application } = require('express')
 const React = require('react')
 const Def = require('../default')
 
@@ -17,6 +18,8 @@ let places = [{
     cuisines: 'Italian, Bakery',
     pic: '/Images/Italian.jpg'
   }]
+
+
 
 function index (data) {
     let placesFormatted = places.map((place) => {
