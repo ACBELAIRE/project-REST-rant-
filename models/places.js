@@ -12,4 +12,4 @@ module.exports = [
     cuisines: 'Italian, Bakery',
     pic: '/Images/Italian.jpg'
   }
-]
+  ]

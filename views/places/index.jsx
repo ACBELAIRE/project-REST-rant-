@@ -2,27 +2,9 @@ const { application } = require('express')
 const React = require('react')
 const Def = require('../default')
 
-// GET places
-//pass in mock data
-//each child in a list should have a uniqie "key" prop <-- come back and do this
-let places = [{
-    name: 'H-Thai-ML',
-    city: 'San Francisco',
-    state: 'CA',
-    cuisines: 'Thai, Pan-Asian',
-    pic: '/Images/Thai.jpg'
-  }, {
-    name: 'Back-End Dev-Etties',
-    city: 'Chicago',
-    state: 'IL',
-    cuisines: 'Italian, Bakery',
-    pic: '/Images/Italian.jpg'
-  }]
-
-
 
 function index (data) {
-    let placesFormatted = places.map((place) => {
+    let placesFormatted = data.places.map((place) => {
       return (
         <div className="col-sm-6">
           <h2>{place.name}</h2>
