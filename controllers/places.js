@@ -13,7 +13,7 @@ router.get('/places/:id', (req, res) => {
 })
 
 router.post('/',(req, res) => {
-    console.log(req.body)
+    
     if (!req.body.pic) {
       // Default image if one is not provided
       req.body.pic = 'https://burst.shopifycdn.com/photos/flatlay-iron-skillet-with-meat-and-other-food.jpg?width=925&format=pjpg&exif=1&iptc=1'
